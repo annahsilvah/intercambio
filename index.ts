@@ -82,3 +82,4 @@ function remover(index: number) {
         html(index, Nome, idade, Cpf, RG, Passaporte, Curso, Nivelescolar, Destino) // mostra todos os elementos exceto o que foi retirado
     })
 }
+
