@@ -39,8 +39,9 @@
     align-items: center;
     background-image: url(../html/bg.png);
     background-size: cover;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
+    box-sizing: border-box;
 }
 
 #texto{
@@ -60,21 +61,27 @@
     gap: 10px;
 }
 
+#principais-programas {
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
 #quadrados {
     display: flex;
     gap: 20px;
     width: 100%;
+    justify-content: center;
 }
 
-.quadrado {
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    background: rgb(255, 255, 255);
-    gap: 10px;
-    border-radius: 5px;
-    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.5), 0 4px 6px -4px rgb(0 0 0 / 0.5);
+.quadrado img {
+    margin: -10px;
+    border-radius: 10px 10px 0 0;
 }
+
 #espaco{
     padding: 20px;
     gap: 20px;
@@ -84,19 +91,24 @@
 #quadrado {
     display: flex;
     gap: 20px;
-    padding-left: 20%;
-    padding-right: 20%;
+    width: 60%;
 }
 .quadrado {
-    align-content: center;
-    font-size: 15px;
-    line-height: 15px;
-    text-align:left;
+    padding: 5px 10px;
     display: flex;
     flex-direction: column;
     background: rgb(255, 255, 255);
+    gap: 10px;
     border-radius: 5px;
     box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.5), 0 4px 6px -4px rgb(0 0 0 / 0.5);
+    align-content: center;
+    font-size: 15px;
+    text-align: left;
+    line-height: 1.5;
+}
+
+p {
+    margin: 0;
 }
 
 #text{
